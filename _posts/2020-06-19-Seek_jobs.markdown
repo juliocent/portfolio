@@ -1,0 +1,29 @@
+---
+layout: page
+title:  "Seek Job Scraping/NLP"
+date:   2020-06-18 12:19:31 +1000
+categories: Seek Job Scraping/NLP
+permalink: "/Seek_Jobs"
+---
+
+This was an interesting project to work on. My first try at webscrapping and NLP.
+
+The two main goals were to determine what in the job descriptions indicated high and low paying data jobs and determine what features determined a job as data against non data jobs.
+
+The most interesting part of this project was the use of analytics to gain a deeper understanding of the categories and develop deeper insights.
+Attaining the feature importance for the models was crucial in to achieving this as well as using PCA to see what were the most important features for the first few PCs.
+
+The image below shows the feature importance, using eli5, for high and low paying jobs respectively:
+![feature importance](/assets/seek_jobs/feature_importance.png)
+
+Just to ensure I was getting meaningfull results, I got the feature importance and explained variance for the Principal Components for high and low paying jobs.
+
+Explained variance graph:
+![explained variance graph](/assets/seek_jobs/PCA_graph.png)
+
+Feature importance for the two first PCs:
+![features for pc1 and pc2](/assets/seek_jobs/pca_features.png)
+
+Good stuff right?! It was pretty straight forward, and it looks so, but the amount of work is not reflected in the results. If you want to see the journey check my notebook on [my github page](https://github.com/juliocent)
+
+

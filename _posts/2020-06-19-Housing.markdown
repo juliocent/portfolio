@@ -1,0 +1,25 @@
+---
+layout: page
+title:  "Ames Housing Regression"
+date:   2020-06-18 12:19:31 +1000
+categories: Seek Job Scraping/NLP
+permalink: "/Ames_Housing"
+---
+
+A classic regression problem with a little twist!
+
+There were two points to this regression problem: 
+Firstly, determine which caracteristics were the most impactful in price,and then determine which features could be renovated to increase the value of the house.
+
+The first problem/step in this problem was to do a very throrough Exploratory Data Analysis and deal with the missing values. If we take a close look at the metadata we will learn that all the missing values are in fact properties that did not have that particular feature (0sqm of basement means the house has no basement).
+
+After looking at all the features it was really clear that there were two main feature that regulated the prices, lot area and overall quality.
+![grlivareaxsaleprice](/assets/ames_1/scatter-grlivarea-saleprice.png)
+
+Great! Now we had to understand what features could be renovated to increase the house price. To do this we looked at the models and the coeficients that each feature had. There was a bit of feature engineering involved in this step, to ensure we were covering all the possibilities.
+This were the most important features we came up with!
+![coeficinets reno](/assets/ames_1/Coefficients_Reno.png)
+
+This project is not on my github page. Mainly because it was my first real regression problem and I want to have another crack at it. I have many additional tools to tackle this problem and possibly get more meaningful results.
+
+

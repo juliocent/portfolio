@@ -1,0 +1,32 @@
+---
+layout: page
+title: Projects
+categories: mainpage
+permalink: /projects/
+---
+
+I hope this piques your interest!
+
+# [Concrete Compressive Strenght](/concrete)
+This is a pretty technical and industry specific project.
+
+Creating a calculator for Concrete compressive strenght using ensamble models.
+
+
+# [Bushfires in NSW](/bushfire)
+This was my las project in the Immersive GA Bootcamp and my first look at GIS.
+
+Really challanging project with a lot still to come!
+
+
+# [Seek Job Scraping/NLP](/Seek_Jobs)
+Really interesting data collection and processing.
+
+In a nut shell, using NLP and PCA to classify and infer information on job postings.
+
+
+# [Ames Housing](/Ames_Housing)
+Using the famous Ames Housing Data set to look housing prices.
+
+There is a cool second part to the problem where we see what caracteristics could be renovated to increase the price of the houses.
+
