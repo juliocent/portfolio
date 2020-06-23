@@ -32,7 +32,7 @@ linkedin_username: juliocent
 
 # Build settings
 theme: minima
-# repository: juliocent/juliocent.github.io
+# repository: juliocent/portfolio
 plugins:
   - jekyll-feed
 

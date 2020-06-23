@@ -2,7 +2,7 @@
 layout: page
 title: Projects
 categories: mainpage
-permalink: /projects/
+permalink: "/projects"
 ---
 
 I hope this piques your interest!
