@@ -10,7 +10,7 @@ This was the final project I developed in the General Assembly Bootcamp.
 It was my first contact with Geographical Information Systems (GIS) and an extraordinarily complex problem. The biggest challenge faced in this project is that there is a difference between the location of events and their time that makes data collection and features engineering overly complex.
 
 For example, take the image below:
-![undinned map](/assets/bushfire/2019.gif)
+![undinned map](portfolio/assets/bushfire/2019.gif)
 
 Each one of the points above is an event, a bushfire. Each event will have a different intensity, position and specific time. It is likely that points that are close, both in time and in space, are highly related. However, there is also a probable relation between points that are close in space, but far in time.
 
