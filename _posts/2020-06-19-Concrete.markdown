@@ -6,18 +6,18 @@ categories: Concrete
 permalink: "/concrete"
 ---
 
-This projects falls somewhat close to one of my areas of expertise, construction/engineering.
+This projects falls somewhat close to one of my areas of expertise, **construction/engineering**.
 
-The main idea is; having a calculator that helps you understand the ideal mixture and how long you need to keep the concrete braced can be a an invaluable asset. If we can speed the construction cycle or save on the mixture by having a comprable Concrete Compressive Strenght (CCS), the whole build will be cheaper and possibly faster.
+The main idea is; having a calculator that helps you understand the ideal mixture and how long you need to keep the concrete braced. If we can speed the construction cycle or save on the mixture by having a comprable Concrete Compressive Strenght (CCS), the whole build will be cheaper and possibly faster.
 
 The main points to look at in concrete has always been the water to cement ration (described in the Abram's water-to-cement ration pronouncement of 1918) and the concrete curing time. This is confirmed on the following graph from the dataset:
 ![water-tocement-ratio](./assets/concrete/water_cement_ratio.png)
 
 This is showing that the more water we have in our mixture, the lower the CCS.
 
-However, we also know that in concretes that have the same water-to-cement ratio concretes with more cement become more brittle. Therefore this is not a one-to-one comparisson and the problem is more complicated than it seems.
+However, we also know that in concretes that have the same water-to-cement ratio concretes with more cement become more brittle. Therefore **this is not a one-to-one comparisson** and the problem is more complicated than it seems.
 
-Another big point to look at is the age, or curing time. Standards around the world have it that for structural concrete a minimum of 7 days, after pouring, without any loads needs to be respected. There is more to look at after those 7 days, however.
+Another big point to look at is the age, or curing time. Standards around the world have it that for structural concrete a minimum of 7 days, after pouring, without any loads needs to be respected. There is **more** to look at after those 7 days, however.
 ![age violin plot](./assets/concrete/age_violin.png)
 Love me some violin plots!
 - Bin 1 goes from 1 to 7 days after pour(AP). 
@@ -29,4 +29,4 @@ Love me some violin plots!
 - Bin 7 goes from 270 to 365 days AP.
 
 
-I will expand his projects page in the future. If you liked the ideas above you can also find the original dataset [here](https://www.kaggle.com/maajdl/yeh-concret-data) and more of my projects [here](/projects).
+I will expand this project in the future. If you liked the ideas above you can also find the original dataset [here](https://www.kaggle.com/maajdl/yeh-concret-data) and more of my projects [here](portfolio/projects.markdown).

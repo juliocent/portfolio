@@ -10,7 +10,7 @@ I hope this piques your interest!
 # [Concrete Compressive Strenght](/_posts/2020-06-19-Concrete.markdown)
 This is a pretty technical and industry specific project.
 
-Creating a calculator for Concrete compressive strenght using ensamble models.
+Creating a calculator for Concrete Compressive Strenght using ensamble models.
 
 
 # [Bushfires in NSW](/_posts/2020-06-19-Bushfires.markdown)
