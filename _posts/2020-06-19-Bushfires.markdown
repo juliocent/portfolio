@@ -10,7 +10,7 @@ This was the final project I developed in the General Assembly Bootcamp.
 It was my first contact with Geographical Information Systems (GIS) and an extraordinarily complex problem. The biggest challenge faced in this project is that there is a difference between the location of events and their time that makes data collection and features engineering overly complex.
 
 For example, take the image below:
-![undinned map](/portfolio/assets/bushfire/2019.gif)
+![undinned map](portfolio/assets/bushfire/2019.gif)
 
 Each one of the points above is an event, a bushfire. Each event will have a different intensity, position and specific time. It is likely that points that are close, both in time and in space, are highly related. However, there is also a probable relation between points that are close in space, but far in time.
 
@@ -19,7 +19,7 @@ The best example for the paragraph above is the concept behind prescribed burns.
 Even if there are no prescribed burns, the fact that bushland has come under fire in the past can influence the future and feature engineering (creating features that a machine learning model will be able to understand) becomes very computationally intensive and prone to mistakes. This process needs to be additive and very careful.
 
 The first approach in dealing with this complexity was to reduce the geographical area we were looking at to just cover NSW. It ended up looking something like this:
-![undinned map NSW](../assets/bushfire/december.gif)
+![undinned map NSW](./assets/bushfire/december.gif)
 
 One important point to highlight now, binning further down may be problematic. If we subdivide the state in 1 degree squares and look at them we may loos informatio of the neighbouring events.
 see the image below for example and let's consider the square with the blue dot (the 42nd square).
