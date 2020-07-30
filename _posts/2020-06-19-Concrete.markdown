@@ -47,7 +47,7 @@ Looking at the CCS after 28 days of curing, with and without Blast Furnace Slag 
 
 This clearly shows that there is a difference in the distribution, which suggests there is a difference, but it is likely that other features have greater influence on the CCS. That becomes clear when we look at the feature importance for the model.
 
-![feature importance](./assets/concrete/features.png)
+![feature importance](./assets/concrete/features.PNG)
 
 That makes some sense. FA and BFS are not used exclusively for the increase in strength, but also for their other characteristics, such as reducing permeability.
 
