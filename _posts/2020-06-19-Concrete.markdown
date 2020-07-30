@@ -64,9 +64,6 @@ The interesting point of this plots is that at the same times the CCS is lower w
 
 The table above corroborates the idea that increased cement in the mixture may make concrete less resistant.
 
-This was an interesting project and I may come back to it and try to develop a calculator to predict CCS given a specific mixture.
+This was an interesting project and I may come back to it and try to develop a calculator to predict CCS given a specific mixture or try to make a NN to make the predictions.
 
-A final point of order, the dataset used for this project was collected from proofs that were broken in laboratory. There dataset was prepared to test Neural Networks to determine the CCS of given mixtures. More precise information can be accquired from a study designed specifically to answer the questions above.
-
-
-I will expand this project in the future. If you liked the ideas above you can also find the original dataset [here](https://www.kaggle.com/maajdl/yeh-concret-data) and more of my projects [here](portfolio/projects.markdown).
+A final point of order, the [dataset used for this project](https://www.kaggle.com/maajdl/yeh-concret-data) was collected from proofs that were broken in laboratory. There dataset was prepared to test Neural Networks to determine the CCS of given mixtures. More precise information can be accquired from a study designed specifically to answer the questions above.
