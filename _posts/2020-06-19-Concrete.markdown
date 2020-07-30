@@ -6,20 +6,22 @@ categories: Concrete
 permalink: "/concrete"
 ---
 
-This projects falls somewhat close to one of my areas of expertise, **construction/engineering**.
+This projects falls somewhat close to one of my areas of expertise, **construction/engineering** and really drew me in because I am very interested in the interpretability of models.
 
-The main idea is; having a calculator that helps you understand the ideal mixture and how long you need to keep the concrete braced. If we can speed the construction cycle or save on the mixture by having a comprable Concrete Compressive Strenght (CCS), the whole build will be cheaper and possibly faster.
+The main goal of this project is answering some questions regarding concrete practices. This is a very studied subject and the practices have been maintained for so long that they are not even questioned by the industry anymore. It is just "done the same way we always did it". in this project I want to take a more bottom-up approach to my answers.
 
-The main points to look at in concrete has always been the water to cement ration (described in the Abram's water-to-cement ration pronouncement of 1918) and the concrete curing time. This is confirmed on the following graph from the dataset:
+[Here](https://www.ccaa.com.au/imis_prod/documents/ConcreteBasics.pdf) is a basic explanation of everything you need to know about the trade from the Cement Concrete and Aggregates Australia (CCAA) outlining the basics.
+
+The main points to look at in concrete has always been the water to cement ration (described in the [Abram's law](https://en.wikipedia.org/wiki/Abrams%27_law) of 1918) and the concrete curing time. This is confirmed on the following graph from the dataset:
 ![water-tocement-ratio](./assets/concrete/water_cement_ratio.png)
 
 This is showing that the more water we have in our mixture, the lower the CCS.
 
-However, we also know that in concretes that have the same water-to-cement ratio concretes with more cement become more brittle. Therefore **this is not a one-to-one comparisson** and the problem is more complicated than it seems.
+However, we also know that in concretes that have comparable mixtures the one with higher cement concentration become more brittle. Therefore **this is not a one-to-one comparison** and the problem is more complicated than it seems.
 
-Another big point to look at is the age, or curing time. Standards around the world have it that for structural concrete a minimum of 7 days, after pouring, without any loads needs to be respected. There is **more** to look at after those 7 days, however.
+Another big point to look at is the age, or curing time, as stated above. Standards around the world have it that for structural concrete a minimum of 3 days, after pouring, without any loads needs to be respected. The best practice for high performance concrete, however, is of 7 days. There is **more** to look at after those 7 days.
 ![age violin plot](./assets/concrete/age_violin.png)
-Love me some violin plots!
+Love violin plots!
 - Bin 1 goes from 1 to 7 days after pour(AP). 
 - Bin 2 goes from 8 to 14 days AP.
 - Bin 3 goes from 15 to 28 days AP.
@@ -27,6 +29,44 @@ Love me some violin plots!
 - Bin 5 goes from 57 to 100 days AP.
 - Bin 6 goes from 100 to 270 days AP.
 - Bin 7 goes from 270 to 365 days AP.
+
+That was a long problem statement, but a necessary one.
+
+From here we are using the binned ages above with the other parts of the mixture to determine the Concrete Compressive Strength (CCS) and answer 2 questions:
+1. Do additional aggregates (Blast Furnace Slag and Fly Ash) change the CCS?
+2. Does Superplasticizer change the curing time significantly?
+
+### Let's find some answers
+
+To answer the questions we are using a Random Forest (best scoring model) and inferencing with the information we have.
+
+#### 1. Do additional aggregates (Blast Furnace Slag and Fly Ash) change the CCS? 
+The answer is **inconclusive**. Let's look at some plots:
+![comparison](./assets/concrete/comparisson_aggregates.png)
+Looking at the CCS after 28 days of curing, with and without Blast Furnace Slag and Fly Ash.
+
+This clearly shows that there is a difference in the distribution, which suggests there is a difference, but it is likely that other features have greater influence on the CCS. That becomes clear when we look at the feature importance for the model.
+
+![feature importance](./assets/concrete/features.png)
+
+That makes some sense. FA and BFS are not used exclusively for the increase in strength, but also for their other characteristics, such as reducing permeability.
+
+#### 2. How does Superplasticizer change the CCS?
+To answer this question lets plot the CCS at 3, 7 and 28 days. The same distribution plot used above would be ideal.
+
+![SP3](./assets/concrete/superplasticizer3.png)
+![SP7](./assets/concrete/superplasticizer3.png)
+![SP28](./assets/concrete/superplasticizer3.png)
+
+The interesting point of this plots is that at the same times the CCS is lower with superplasticizer. Let’s look at the average composition for concrete to try and make sense of this.
+
+![SP28](./assets/concrete/Capture.PNG)
+
+The table above corroborates the idea that increased cement in the mixture may make concrete less resistant.
+
+This was an interesting project and I may come back to it and try to develop a calculator to predict CCS given a specific mixture.
+
+A final point of order, the dataset used for this project was collected from proofs that were broken in laboratory. There dataset was prepared to test Neural Networks to determine the CCS of given mixtures. More precise information can be accquired from a study designed specifically to answer the questions above.
 
 
 I will expand this project in the future. If you liked the ideas above you can also find the original dataset [here](https://www.kaggle.com/maajdl/yeh-concret-data) and more of my projects [here](portfolio/projects.markdown).
