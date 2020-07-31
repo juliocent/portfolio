@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "Concrete Compressive Strenght"
+title:  "Concrete Compressive Strength"
 date:   2020-06-18 12:19:31 +1000
 categories: Concrete
 permalink: "/concrete"
@@ -13,6 +13,7 @@ The main goal of this project is answering some questions regarding concrete pra
 [Here](https://www.ccaa.com.au/imis_prod/documents/ConcreteBasics.pdf) is a basic explanation of everything you need to know about the trade from the Cement Concrete and Aggregates Australia (CCAA) outlining the basics.
 
 The main points to look at in concrete has always been the water to cement ration (described in the [Abram's law](https://en.wikipedia.org/wiki/Abrams%27_law) of 1918) and the concrete curing time. This is confirmed on the following graph from the dataset:
+
 ![water-tocement-ratio](./assets/concrete/water_cement_ratio.png)
 
 This is showing that the more water we have in our mixture, the lower the CCS.
@@ -20,6 +21,7 @@ This is showing that the more water we have in our mixture, the lower the CCS.
 However, we also know that in concretes that have comparable mixtures the one with higher cement concentration become more brittle. Therefore **this is not a one-to-one comparison** and the problem is more complicated than it seems.
 
 Another big point to look at is the age, or curing time, as stated above. Standards around the world have it that for structural concrete a minimum of 3 days, after pouring, without any loads needs to be respected. The best practice for high performance concrete, however, is of 7 days. There is **more** to look at after those 7 days.
+
 ![age violin plot](./assets/concrete/age_violin.png)
 Love violin plots!
 - Bin 1 goes from 1 to 7 days after pour(AP). 
