@@ -29,9 +29,15 @@ If we use only that area for analysis we loose the possible connection between t
 
 ---
 
-This project is still in development and will be for some time.
+This project is still in development.
 
-So far, this project has a small app that I developed using Streamlit and Heroku (I am still having some problems with the deployment, once fixed I will link it here).
+So far, this project has a [small app](http://13.238.142.157:8501/) that I developed using Streamlit and deployed using AWS EC2.
+
+Technologies used in this project:
+- Pandas
+- Geopandas 
+- Streamlit
+- Pydeck
 
 <!-- The best visualization for the project is using a density map, looking like the one below, but interactive:
 ![bushfire density map above](/assets/bushfire/above.jpg)
